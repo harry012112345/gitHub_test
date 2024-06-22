@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table>
+    <tr>
+       <th>user_id</th>
+       <th>username</th>
+       <th>first_name</th>
+       <th>last_name</th>
+    </tr>
+    {% for one in list %}
+    <tr>
+        <th>{{ one[0] }}</th>
+        <th>{{ one[1] }}</th>
+        <th>{{ one[2] }}</th>
+        <th>{{ one[3] }}</th>
+    </tr>
+    {% endfor %}
+</table>
+</body>
+</html>

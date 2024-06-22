@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p>name:{{ name }}</p>
+<p>sex:{{ sex }}</p>
+<p>age:{{ age }}</p>
+{% for one in tel %}
+  <p>tel:{{ one }}</p>
+{% endfor %}
+{% if age>=18 %}
+    <button>報名</button>
+{% endif %}
+</body>
+</html>
